@@ -12,7 +12,7 @@
     <%= text_field_tag(:author, @book.author.name) %>
   </p>
   <ul>
-    <% @book.genres.each do |genre| %>
+    <% @genres.each do |genre| %>
       <li>
         <!-- Add checkbox for genre -->
         <%= genre.name %>
