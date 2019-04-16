@@ -3,3 +3,4 @@ class RemovePagesFromBooks < ActiveRecord::Migration[5.2]
     remove_column :books, :pages, :integer
   end
 end
+
