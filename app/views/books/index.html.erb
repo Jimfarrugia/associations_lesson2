@@ -6,7 +6,7 @@
     <th>Author</th>
   </tr>
 
-  <% @books.each do |book| %>
+  <% @books.order(:id).each do |book| %>
   <tr>
     <td>
       <%= link_to(book.title, controller: "books", action: "edit", id: book.id) %>
