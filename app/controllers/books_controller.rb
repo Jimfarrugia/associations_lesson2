@@ -24,6 +24,9 @@ class BooksController < ApplicationController
     # else: associate this book with the existing author.
     book.author.update(name: params[:author])
 
+    # TODO: update book.genres with user input values
+    # (add genres that are selected and remove genres that aren't selected.)
+
     redirect_to book_path
   end
 
