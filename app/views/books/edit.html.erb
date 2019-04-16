@@ -3,10 +3,11 @@
 <%= form_tag(book_edit_path, method: "put") do %>
   <p>
     <%= label_tag(:title, "Book Title") %>
-    
+    &nbsp;
     <%= text_field_tag(:name, nil, placeholder: @book.title) %>
     <br>
     <%= label_tag(:date_of_birth, "Date of Birth") %>
+    &nbsp;
     <%= date_field(:author, :date_of_birth) %>
   </p>
   <p>
