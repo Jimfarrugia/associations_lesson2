@@ -1,2 +1,12 @@
-<h1>Books#view</h1>
-<p>Find me in app/views/books/view.html.erb</p>
+<h1>View Book Details</h1>
+<p>
+  <strong><%= @book.title %></strong> by <%= @book.author.name %>
+</p>
+<p>
+  Created:
+  <%= @book.created_at %>
+</p>
+<p>
+  Last Updated:
+  <%= @book.updated_at %>
+</p>

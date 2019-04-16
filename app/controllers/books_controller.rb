@@ -7,9 +7,11 @@ class BooksController < ApplicationController
   end
 
   def view
+    @book = Book.find(params[:id])
   end
 
   def edit
+    @book = Book.find(params[:id])
   end
 
   def delete
