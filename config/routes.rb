@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'books/index'
+  get 'books/', to: "books#index", as: "books"
   get 'books/new'
   get 'books/view'
   get 'books/edit'
