@@ -4,11 +4,11 @@
   <p>
     <%= label_tag(:title, "Book Title") %>
     &nbsp;
-    <%= text_field_tag(:name, nil, placeholder: @book.title) %>
+    <%= text_field_tag(:name, @book.title) %>
     <br>
-    <%= label_tag(:date_of_birth, "Date of Birth") %>
+    <%= label_tag(:author, "Author Name") %>
     &nbsp;
-    <%= date_field(:author, :date_of_birth) %>
+    <%= text_field_tag(:author, @book.author.name) %>
   </p>
   <p>
     <%= submit_tag("Update Book") %>
