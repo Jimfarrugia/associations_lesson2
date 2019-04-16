@@ -12,6 +12,7 @@ class BooksController < ApplicationController
 
   def edit
     @book = Book.find(params[:id])
+    @genres = Genre.all
   end
 
   def update
